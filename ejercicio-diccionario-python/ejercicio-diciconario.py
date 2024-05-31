@@ -1,6 +1,11 @@
+# ---------------creando comentarios------------
 
+# mi diccionario vacio
 diccionario = {}
+
+# se integra un try exception 
 try:
+    # este es el menu de las operaciones, realizado con un while
     while(True):
         opcion=0
         print("*******************************")
@@ -15,6 +20,7 @@ try:
         print('5) Salir\n')
         opcion = int(input('Ingrese la opcion a elegir:--> '))
 
+        # creando funciones 
         def funcion1 ():
             cantidad = int(input('¿Cuantos valores ingresará?\n'))
             for contador in range(cantidad):
@@ -40,7 +46,8 @@ try:
             
         def funcion5():
             print("\nUd eligio salir\n")
-        
+
+        # dentro del match opcion en cada case se llama a la funcion requerida de acuerdo al menu
         match(opcion):
             case 1:
                 funcion1()  
